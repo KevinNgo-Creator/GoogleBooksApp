@@ -1,0 +1,25 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "install": "cd client && npm install",
+    "client": "cd client && npm start ",
+    "dev": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "start": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Kevin Ngo",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.7",
+    "mongoose": "^5.9.2",
+    "morgan": "^1.9.1",
+    "node.js": "0.0.1-security",
+    "nodemon": "^2.0.2"
+  }
+}
